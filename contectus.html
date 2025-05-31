@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> تواصل معي</title>
+</head>
+<body dir="rtl">
+    <style>
+        body {
+           background-image: linear-gradient(to right top, #cea4bc, #b497b0, #9a8aa3, #837c93, #6e6f81, #6c7385, #6b7887, #6a7c89, #7794a1, #85adb7, #94c7cb, #a7e1dd);
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            
+        }
+        p {
+            text-align: center;
+           
+        }
+        div {
+            padding: 18px;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: rgb(212, 203, 203);
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        input {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font-size: larger;
+            padding: 10px;
+            width: 60%;
+            
+
+        }
+        textarea:focus, input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            margin-top: 30px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: larger;
+        }
+        button:hover {
+            background-color: #007BFF;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+        }
+        a:hover {
+            background-color: #007BFF;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        a:visited {
+            color: black;
+        }
+        a:active {
+            color: white;
+            background-color: #007BFF;
+        }
+        a:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        }
+        a:hover, button:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+        div:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s;
+        }
+        @media screen and (max-width: 600px) {
+            div {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            input, textarea {
+                width: 90%;
+            }
+            
+        }
+    </style>
+    <div id="preview">
+        <a href="index.html">رجوع</a>
+      <h1> تواصل  معي </h1>
+      <p> اذا كان لديك اي استفسار فلا تترد في التواصل معي</p>
+      <form action="#">
+        <label for="Name"> اسمك :</label>
+        <input type="text" name="Name" required>
+        <br>
+        <label for="email"> بريدك الالكتروني :</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="message"> رسالتك :</label>
+        <textarea name="message" rows="4" cols="50" required></textarea>
+        <button>ارسال </button>
+       <h4>اختر تنسيق صفحتك 👇</h4>
+        <input type="color" oninput="preview.style.
+        backgroundColor= this.value">
+       
+      </form>
+    </div>
+</body>
+</html>
